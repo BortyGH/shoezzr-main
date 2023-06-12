@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:wght@700&display=swap');
+
+@tailwind base;
+
+/* Your own custom base styles */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Your own custom component styles */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+/* @import header font; */
+
+@layer components {
+  html {
+    scrollbar-color: #ea580c transparent;
+  }
+  body {
+    background-color: #111827;
+    overflow-x: hidden;
+  }
+
+  .scrolling-disabled {
+    overflow: hidden;
+    touch-action: none;
+    pointer-events: none;
+  }
+}
